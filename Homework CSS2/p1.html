@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+
+        .main{
+            width: 550px;
+            height: 350px;
+            background-color: lightgray;
+            border-radius: 10px;
+            padding: 10px;
+        }
+        p{
+            display: block;
+            margin-bottom: 8px;
+        }
+        input,select,button{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid;
+            border-radius: 4px;
+            box-sizing: border-box; 
+        }
+        .b1{
+            background-color: green;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .dropdown{
+            position: relative;
+            display: inline-block;
+        }
+        .db{
+            width: 100px;
+            height: 50px;
+            background-color: green;
+            color: white;
+            padding: 10px 20px;  
+        }
+        .dc{
+            width: 150px;
+            height: 130px;
+            display: none; 
+            position: absolute;
+            background-color: lightgrey;
+        }
+        .dc a{
+            color: black;
+            padding: 10px 16px;
+            text-decoration: none;
+            display: block;
+        }
+       
+        .dropdown:hover .dc{ 
+            display: block;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <form>
+            <div class="sub">
+            <p>First Name</p>
+            <input type="text" placeholder="Your name.."></div>
+            <div class="sub">
+            <p>Last Name</p>
+            <input type="text" placeholder="Your last name.."></div>
+            <div class="sub" >
+            <p>Country<p>
+            <select>
+                <option>Australia</option>
+                <option>Jordan</option>
+                <option>USA</option>
+            </select></div>
+            <div class="sub"><button class="b1">Submit</button></div>
+            
+    </div>
+</form>
+
+<div class="dropdown">
+    <button class="db">Dropdown</button>
+    <div class="dc">
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+    </div>
+</div>
+</body>
+</html>
