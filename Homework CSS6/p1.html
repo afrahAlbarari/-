@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @font-face {
+            font-family: 'myfont';
+            src: url(font/Poppins-Black.ttf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+            overflow: hidden;
+
+        }
+
+        .main {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            margin: auto;
+
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        .A {
+            position: absolute;
+            top: 20px;
+            left: 10px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            padding: 10px 0;
+            align-items: center;
+        }
+
+        .A img {
+
+            width: 150px;
+            height: auto;
+
+        }
+
+        .A ul {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+
+        }
+
+        .A ul li {
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .B {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+        .B h1 {
+
+            color: white;
+            font-size: 100px;
+            font-family: 'myfont';
+            width: 100%;
+            text-align: left;
+            margin-bottom: 20px;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .B button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: lightgray;
+            color: black;
+            cursor: pointer;
+            border: 1px solid black;
+            border-radius: 20px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <video controls autoplay muted loop>
+            <source src="madia/video1.mp4">
+        </video>
+        <div class="A">
+            <img src="madia/Illustration-of-logo-design-template-on-transparent-background-PNG.png">
+            <ul>
+                <li>HOME</li>
+                <li>TRAVEL</li>
+                <li>BLOGS</li>
+                <li>SUPPORT</li>
+            </ul>
+
+        </div>
+        <div class="B">
+            <h1>EXPLORE THE WORLD</h1>
+            <button>Explore</button>
+        </div>
+    </div>
+</body>
+
+</html>
