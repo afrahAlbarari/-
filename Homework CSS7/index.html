@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+ *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box; 
+    
+ }
+ .s-one{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url(assets/img/hero.jpg);
+ }
+ .one{
+    width: 100%;
+    padding: 40px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ .one h3{
+    color: white;
+    
+ }
+ .one ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px;
+}
+.one ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 200;
+    padding: 15px;
+}
+li a:hover{
+    background: black;
+    transition: 0.6s;
+}
+.two{
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.two h1{
+    margin-top: 20px;
+    font-size: 70px;
+    font-weight: 800;
+}
+.two h3{
+    font-size: 30px;
+}
+
+button{
+    background-color: blue;
+    color: white;
+    width: 250px;
+    border: none;
+    padding: 20px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    margin: 30px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover{
+    background: rgb(0, 192, 226);
+    transition: 0.5s;
+}
+.s-two{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+.three{
+   display: grid; 
+   grid-template-rows: auto;
+   gap: 50px;
+   text-align: center;
+   margin-top: 70px;
+   margin-bottom: 50px;
+   padding: 50px;
+}
+.three p{
+    line-height: 1.8;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+img{
+    padding: 20px;
+}
+.six{
+display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  gap: 20px;
+
+}
+.A{
+  flex: 1;
+  text-align: center;
+  padding: 50px;
+ 
+}
+.A h5 {
+  margin-bottom: 15px;
+}
+
+.A p {
+  margin-top: 0;
+  line-height: 1.8;
+}
+hr{
+   border: 0;
+   height: 2px; 
+   background-color: blue; 
+   width: 20%; 
+   margin: 20px auto;
+            
+}
+.siveen{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+input{
+    padding: 15px;
+    width: 400px;
+    border-radius: 5px;
+}
+legend{
+    background-color: rgba(0, 0, 0, 0.701);
+    width: 100%;
+    height: 200px;
+    padding: 50px;
+    text-align: center;
+    
+}
+legend p{
+    color: white;
+    line-height: 1.8;
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="s-one">
+        <div class="one">
+            <h3>Website Logo</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </div>
+        <div class="two">
+            <h1>Responsive Flexbox Template</h1>
+            <h3>A freebie by Tutorialzine.</h3>
+            <div>
+                <button type="button">DOWMLOAD IT HERE</button>
+            </div>
+        </div>
+    </div>
+    <div class="s-two">
+       <div class="three">
+        <h1>Some Of Our Work</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequatur minus quibusdam. Praesentium libero animi, molestiae rem culpa mollitia? Ipsum unde nostrum accusantium, consequuntur sint provident? Sit et ipsa ut.</p>
+    <hr>
+    </div> 
+       <div class="four">
+        <img src="assets/img/coast.jpg" width="400px" height="400px">
+        <img src="assets/img/island.jpg" width="700px" height="400px">
+    </div>
+        <div class="five">
+        <img src="assets/img/balloon.jpg" width="700px" height="400px">
+        <img src="assets/img/mountain.jpg" width="400px" height="400px">
+    </div>
+<div class="s-three" style="background-color:rgba(211, 211, 211, 0.107) ">
+    <div class="three">
+        <h1>Features And Services</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequatur minus quibusdam. Praesentium libero animi, molestiae rem culpa mollitia? Ipsum unde nostrum accusantium, consequuntur sint provident? Sit et ipsa ut.</p>
+    <hr>
+    </div> 
+      <div class="six">
+        <div class="A">
+            <h5>Photography</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis omnis, dicta laudantium facere dolor dolores animi voluptate. Esse accusantium illum veritatis voluptates? Voluptates veniam porro neque magnam facilis eum dolorem?</p>
+        </div>
+        <div class="A">
+            <h5>Web Development</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam laudantium veritatis tempora, esse ratione voluptatibus quaerat minima officia ex vero beatae sed adipisci? Eius earum quibusdam rerum facilis repellendus nobis.</p>
+        </div>
+        <div class="A">
+            <h5>Content Editing</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, fugit molestias aliquid repellendus nobis qui ad excepturi cumque totam quasi placeat culpa! Voluptate, nisi. Odio fugit tenetur maiores quos mollitia.</p>
+        </div>
+     </div>
+    <div class="s-four" style="background-color:rgba(211, 211, 211, 0.107)">
+        <div class="three">
+            <h1>Join Our Newsletter</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat consequatur minus quibusdam. Praesentium libero animi, molestiae rem culpa mollitia? Ipsum unde nostrum accusantium, consequuntur sint provident? Sit et ipsa ut.</p>
+        <hr>
+        </div> 
+        <div class="siveen">
+            <input type="email" id="email" name="email" placeholder="Email">
+            <button type="submit">SUBSCRIBE NOW</button>
+        </div>
+        <legend>
+            <p>MADE BY TUTORIALZINE. IMAGES COURTESY TO UNSPLASH.</p>
+            <p>NO ATTRIBUTION REQUIRED. YOU CAN REMOVE THIS FOOTER.</p>
+        </legend>
+
+
+     </div>
+
+</div>
+
+
+    </div>
+</body>
+</html>
